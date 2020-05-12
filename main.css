@@ -288,8 +288,8 @@ section {
 }
 
 .card-container {
-  margin-top: 200px;
   height: 80%;
+  margin-top: 0px;
   width: 100vw;
   display: -ms-grid;
   display: grid;
@@ -544,6 +544,9 @@ footer {
   }
   .header a {
     font-size: 16px;
+  }
+  .card-container {
+    margin-top: 200px;
   }
   .mobile {
     height: 50px;

@@ -73,7 +73,7 @@ else{
 
 
 
-const mobileMenuBtn = document.querySelector(".mobile");
+const mobileMenuBtn = document.querySelector(".menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 const navItem = document.querySelectorAll(".nav-link")
 

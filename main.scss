@@ -226,8 +226,8 @@ section{
     min-height: 100vh;
 }
 .card-container{
-    margin-top: 200px;
     height: 80%;
+    margin-top: 0px;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px);
@@ -417,6 +417,9 @@ footer{
     a{
         font-size: 16px;
     }
+}
+.card-container{
+    margin-top: 200px;
 }
 .mobile{
     height: 50px;
