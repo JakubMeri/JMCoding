@@ -199,11 +199,11 @@ section{
     background: white !important;
 }
 .info-data{
-    left: 0;
+    right: 0;
     top: 0;
     background-size: cover;
     height: 100%;
-    width: 100%;
+    width: 50%;
     background: black;
     position: absolute;
     display: flex;
@@ -211,15 +211,36 @@ section{
     justify-content: center;
     overflow: hidden;
 }
+.info-data::before{
+    content: "";
+    position: absolute;
+    left: -8%;
+    bottom: -8%;
+    width: 100px;
+    height: 100px;
+    background: white;
+    transform: rotate(45deg);
+}
 .panel{
     position: absolute;
     left: 0;
     bottom: 0%;
     height: 100%;
     width: 50%;
-    z-index: 2;
+    z-index: 1;
     background: white;
     transition: 1s;
+    overflow: hidden;
+}
+.panel::before{
+    content: "";
+    position: absolute;
+    right: -8%;
+    top: -8%;
+    width: 100px;
+    height: 100px;
+    background: black;
+    transform: rotate(45deg);
 }
 
 
@@ -291,6 +312,9 @@ section{
     opacity: 0;
     transition: .5s;
     z-index: 3;
+}
+.nadpis1{
+    color: $text-color !important;
 }
 .left{
     left: 0;
@@ -408,6 +432,17 @@ footer{
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
+}
+#kontakt::before{
+    content: "";
+    position: absolute;
+    left: -8%;
+    bottom: -15%;
+    width: 200px;
+    height: 200px;
+    background: black;
+    transform: rotate(45deg);
 }
 
 
@@ -512,8 +547,13 @@ footer{
     width: 100%;
 }
 #projekty::before{
-    top: -40%;
-    right: -100%;
+background: transparent;
+}
+.panel::before{
+    right: -15% !important;
+}
+#kontakt::before{
+    left: -30%;
 }
 footer{
     font-size: 12px;
