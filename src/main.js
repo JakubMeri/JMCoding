@@ -84,6 +84,10 @@ let showMenu = true;
 mobileMenuBtn.addEventListener("click", () => {
     if(showMenu === true){
         mobileMenu.style.display = "flex";
+        mobileMenuBtn.style.transform = "rotateY(180deg)";
+        for(let i = 0; i < mobileMenuBtn.children.length; i++){
+            mobileMenuBtn.children[i].style.background = "rgb(252, 235, 0)";
+        }
         document.body.style.overflowY = "hidden";
         setTimeout(() => {
             mobileMenu.style.opacity = "1";
@@ -92,6 +96,11 @@ mobileMenuBtn.addEventListener("click", () => {
     }
     else{
         mobileMenu.style.opacity = "0";
+        mobileMenuBtn.style.transform = "rotateY(0deg)";
+        mobileMenuBtn.style.color = "#fff";
+        for(let i = 0; i < mobileMenuBtn.children.length; i++){
+            mobileMenuBtn.children[i].style.background = "#fff";
+        }
         setTimeout(() => {
             mobileMenu.style.display = "none";
             document.body.style.overflowY = "auto";

@@ -670,6 +670,8 @@ footer {
     border: none;
     cursor: pointer;
     outline: none;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .menu span {
     width: 40px;
