@@ -7,16 +7,6 @@ new ScrollMagic.Scene({
 }).setClassToggle(".nadpis1", "show").addTo(controller);
 
 new ScrollMagic.Scene({
-    triggerElement: "#omne"
-}).setClassToggle(".panel", "bottom").addTo(controller);
-
-
-new ScrollMagic.Scene({
-    triggerElement: "#projekty",
-    offset: 100
-}).setClassToggle("#projekty", "white").addTo(controller);
-
-new ScrollMagic.Scene({
     triggerElement: "#projekty",
     reverse: false
 }).setClassToggle(".nadpis2", "show") .addTo(controller);
@@ -113,26 +103,6 @@ mobileMenuBtn.addEventListener("click", () => {
 
 
 
-const boxMove = (number) => {
-    for(let i =0; i< number; i++){
-        document.querySelector(".boxes").innerHTML += "<div class='box'></div>"
-    }
 
-    const box = document.querySelectorAll(".box");
-    box.forEach( box => {
-        let randomleft = Math.random() * 95;
-        let randomhight = Math.random() * 95;
-        box.style.left = `${randomleft}%`
-        box.style.top = `${randomhight}%`
-    })
-setInterval(() => {
-    box.forEach( box => {
-        let randomleft = Math.random() * 95;
-        let randomhight = Math.random() * 95;
-        box.style.left = `${randomleft}%`
-        box.style.top = `${randomhight}%`
-    })
-}, 2000)
 
-}
-boxMove(100);
+
