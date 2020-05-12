@@ -205,26 +205,28 @@ section {
 
 .nav-link::before {
   content: "-";
+  color: #fceb00;
   position: absolute;
   top: 50%;
   left: -30%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: left .3s, opacity .3s;
+  transition: left .3s, opacity .3s;
   opacity: 0;
   text-shadow: 1px 1px 1px black;
 }
 
 .nav-link::after {
   content: "-";
+  color: #fceb00;
   position: absolute;
   top: 50%;
   right: -30%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: right .3s, opacity .3s;
+  transition: right .3s, opacity .3s;
   opacity: 0;
   text-shadow: 1px 1px 1px black;
 }
@@ -625,7 +627,6 @@ footer {
   }
   .header a {
     font-size: 16px;
-    text-transform: uppercase;
   }
   .card-container {
     margin-top: 200px;
