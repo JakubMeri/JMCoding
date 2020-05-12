@@ -6,6 +6,10 @@ new ScrollMagic.Scene({
     reverse: false
 }).setClassToggle(".nadpis1", "show").addTo(controller);
 
+new ScrollMagic.Scene({
+    triggerElement: "#omne"
+}).setClassToggle(".panel", "show").addTo(controller);
+
 
 new ScrollMagic.Scene({
     triggerElement: "#projekty",
@@ -22,6 +26,13 @@ new ScrollMagic.Scene({
     reverse: false
 }).setClassToggle(".nadpis3", "show") .addTo(controller);  
 
+new ScrollMagic.Scene({
+    triggerElement: "#projekty",
+}).setClassToggle(".one", "show") .addTo(controller); 
+
+new ScrollMagic.Scene({
+    triggerElement: "#projekty",
+}).setClassToggle(".two", "show") .addTo(controller); 
 
 new ScrollMagic.Scene({
     triggerElement: ".wrapper",

@@ -180,7 +180,7 @@ section{
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 200vh;
+    min-height: 200vh;
     z-index: 2;
     background: black;
 }
@@ -196,9 +196,9 @@ section{
 .technologie{
     left: 0;
     bottom: 0;
-    background: url("./img/technology-bg.jpeg") center;
+    background: url("./img/technology-bg.jpeg") bottom;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     position: absolute;
     box-shadow: inset 0px 0px 20px #000,
@@ -212,6 +212,17 @@ section{
     width: 100%;
     background: black;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel{
+    height: 400px;
+    width: 50%;
+    z-index: 2;
+    background: #333;
+    transition: 1s;
+    opacity: 0;
 }
 .boxes{
     width: 100%;
@@ -225,7 +236,7 @@ section{
  height: 10px;
  width: 10px;
  position: absolute;
- background: radial-gradient(#333, black);
+ background: radial-gradient(rgb(39, 39, 39), black);
  border-radius: 50%;
 }
 .technologie::before{
@@ -516,6 +527,10 @@ footer{
         margin: 20px 0px;
         font-family: 'Audiowide', cursive;
     }
+}
+.panel{
+    margin-top: 200px;
+    width: 100%;
 }
 #projekty::before{
     top: -40%;
