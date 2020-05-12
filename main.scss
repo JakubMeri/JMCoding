@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+::selection{
+    background: black;
+    color: white;
+}
+.container{
+    font-family: sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+.header{
+    font-family: 'Audiowide', cursive;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px black;
+    a{
+        z-index: 2;
+        color: white;
+        text-decoration: none;
+        border: solid 2px white;
+        padding: 5px 8px;
+        margin-top: 40px;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px black;
+        box-shadow: 1px 1px 1px black;
+        transition: .3s;
+        background: rgba(0,0,0,.2);
+    }
+    a:hover{
+        padding: 5px 14px;
+    }
+    span{
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    }
+    h1{
+        font-size: 50px;
+        color: white;
+        z-index: 2;
+        text-shadow: 1px 1px 1px black;
+        pointer-events: none;
+        text-transform: uppercase;
+    }
+    h2{
+        text-align: center;
+        z-index: 2;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        pointer-events: none;
+    }
+    .video{
+        object-fit: cover;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        align-self: center;
+    }
+}
+section{
+    min-height: 100vh;
+    width: 100vw;
+}
+.overlay{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    box-shadow: inset 0px 0px 20px black;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    width: 100%;
+    font-family: 'Audiowide', cursive;
+    background: transparent;  
+    transition: .5s; 
+}
+.color{
+    background: black;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    text-shadow: 1px 1px 1px black;
+    border-left: solid 2px white;
+    border-bottom: solid 2px white;
+    border-right: solid 2px white;
+    padding: 0px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+    flex-direction: column;
+    span{
+        font-size: 12px;
+        transition: .3s;
+    }
+}
+.logo:hover{
+    span{
+        color: rgb(255, 234, 208);
+        text-shadow: 1px 1px 1px rgb(61, 61, 61);
+    }
+}
+.nav-link{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    text-shadow: 1px 1px 1px black;
+}
+.nav-link::before{
+    content: "-";
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    transform: translate(0,-50%);
+    transition: .3s;
+    opacity: 0;
+    text-shadow: 1px 1px 1px black;
+}
+.nav-link::after{
+    content: "-";
+    position: absolute;
+    top: 50%;
+    right: -30%;
+    transform: translate(0,-50%);
+    transition: .3s;
+    opacity: 0;
+    text-shadow: 1px 1px 1px black;
+}
+.nav-link:hover::before{
+    left: -20%;
+    opacity: 1;
+}
+.nav-link:hover::after{
+    right: -20%;
+    opacity: 1;
+}
+/* About me section--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------- */
+
+#omne{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 200vh;
+    z-index: 2;
+    background: black;
+}
+.nadpis1{
+    color: white !important;
+}
+.black{
+    background: black;
+}
+.white{
+    background: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About me projekty--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------- */
+#projekty{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .5s;
+    background: black;
+    min-height: 100vh;
+}
+.card-container{
+    margin-top: 200px;
+    height: 80%;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 100px;
+    position: relative;
+    transition: .5s;
+}
+#projekty::before{
+    position: absolute;
+    content: "";
+    right: -60%;
+    top: 0%;
+    height: 50%;
+    width: 100%;
+    background: black;
+    transform: rotate(45deg);
+}
+.nadpis1, .nadpis2, .nadpis3{
+    position: absolute;
+    top: 50px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: black;
+    font-family: 'Audiowide', cursive;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+    opacity: 0;
+    transition: .5s;
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
+.hide{
+    opacity: 0;
+}
+.show{
+    opacity: 1 !important;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    transition: .6s;
+    .info{
+        display: flex;
+        flex-direction: column;
+        background: #333;
+        margin-top: 20px;
+        width: 200px;
+        height: 60px;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-family: 'Audiowide', cursive;
+        text-shadow: 1px 1px 1px black;
+        border: 2px solid black;
+        span{
+            
+            a{
+                color: white;
+                font-size: 20px;
+                margin: 0px 5px;
+            }
+            a:hover{
+                color: black;
+            }
+        }
+
+    }
+}
+.two{
+transition-delay: .5s;
+}
+.card{
+    height: 400px;
+    width: 200px;
+    border-radius: 10px;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: black;
+    .screen{
+        width: 180px;
+        height: 350px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        box-shadow: inset 0px 0px 1px rgb(143, 143, 143);
+    }
+
+    .covid, .space{
+        background: black;
+        transition: .5s;
+    }
+    .button{
+        width: 50px;
+        height: 15px;
+        background: #333;
+        border-radius: 5px;
+        box-shadow: inset 0px 0px 4px black;
+        cursor: pointer;
+    }
+    .sound{
+        height: 5px;
+        width: 40px;
+        background: #333;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: black;
+    font-family: 'Audiowide', cursive;
+}
+
+
+
+
+
+/* About me projekty--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------- */
+
+#kontakt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+//not show on desctop
+.mobile{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+//smaller screen
+
+@media (max-width: 500px){
+.nadpis1,
+.nadpis2,
+.nadpis3{
+    width: 100%;
+    text-align: center;
+}
+.nav{
+    display: none;
+}
+.header{
+    .video{
+       right: auto;
+    }
+    h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    h2{
+        font-size: 16px;
+    }
+    a{
+        font-size: 16px;
+    }
+}
+.mobile{
+    height: 50px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+}
+.menu{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    span{
+        width: 40px;
+        height: 2px;
+        background: white;
+    }
+    span:nth-child(1),  span:nth-child(3){
+        width: 30px;
+        height: 2px;
+        background: white;
+    }
+}
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transition: .3s;
+    a{
+        margin: 20px 0px;
+        font-family: 'Audiowide', cursive;
+    }
+}
+#projekty::before{
+    top: -40%;
+    right: -100%;
+}
+footer{
+    font-size: 12px;
+}
+}

@@ -1,0 +1,634 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-selection {
+  background: black;
+  color: white;
+}
+
+::selection {
+  background: black;
+  color: white;
+}
+
+.container {
+  font-family: sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  font-family: 'Audiowide', cursive;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 50px black;
+          box-shadow: 0px 0px 50px black;
+}
+
+.header a {
+  z-index: 2;
+  color: white;
+  text-decoration: none;
+  border: solid 2px white;
+  padding: 5px 8px;
+  margin-top: 40px;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px black;
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.header a:hover {
+  padding: 5px 14px;
+}
+
+.header span {
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: white;
+  z-index: 2;
+  text-shadow: 1px 1px 1px black;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  text-align: center;
+  z-index: 2;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  pointer-events: none;
+}
+
+.header .video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.overlay {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0px 0px 20px black;
+          box-shadow: inset 0px 0px 20px black;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 10;
+  width: 100%;
+  font-family: 'Audiowide', cursive;
+  background: transparent;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.color {
+  background: black;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  height: 100%;
+  text-shadow: 1px 1px 1px black;
+  border-left: solid 2px white;
+  border-bottom: solid 2px white;
+  border-right: solid 2px white;
+  padding: 0px 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo span {
+  font-size: 12px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.logo:hover span {
+  color: #ffead0;
+  text-shadow: 1px 1px 1px #3d3d3d;
+}
+
+.nav-link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  text-shadow: 1px 1px 1px black;
+}
+
+.nav-link::before {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+  text-shadow: 1px 1px 1px black;
+}
+
+.nav-link::after {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  right: -30%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+  text-shadow: 1px 1px 1px black;
+}
+
+.nav-link:hover::before {
+  left: -20%;
+  opacity: 1;
+}
+
+.nav-link:hover::after {
+  right: -20%;
+  opacity: 1;
+}
+
+/* About me section--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------- */
+#omne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 200vh;
+  z-index: 2;
+  background: black;
+}
+
+.nadpis1 {
+  color: white !important;
+}
+
+.black {
+  background: black;
+}
+
+.white {
+  background: white !important;
+}
+
+/* About me projekty--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------- */
+#projekty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: black;
+  min-height: 100vh;
+}
+
+.card-container {
+  margin-top: 200px;
+  height: 80%;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 200px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 100px;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#projekty::before {
+  position: absolute;
+  content: "";
+  right: -60%;
+  top: 0%;
+  height: 50%;
+  width: 100%;
+  background: black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.nadpis1, .nadpis2, .nadpis3 {
+  position: absolute;
+  top: 50px;
+  width: 400px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  color: black;
+  font-family: 'Audiowide', cursive;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.card-wrapper .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #333;
+  margin-top: 20px;
+  width: 200px;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  font-family: 'Audiowide', cursive;
+  text-shadow: 1px 1px 1px black;
+  border: 2px solid black;
+}
+
+.card-wrapper .info span a {
+  color: white;
+  font-size: 20px;
+  margin: 0px 5px;
+}
+
+.card-wrapper .info span a:hover {
+  color: black;
+}
+
+.two {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.card {
+  height: 400px;
+  width: 200px;
+  border-radius: 10px;
+  border: solid 1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
+}
+
+.card .screen {
+  width: 180px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: inset 0px 0px 1px #8f8f8f;
+          box-shadow: inset 0px 0px 1px #8f8f8f;
+}
+
+.card .covid, .card .space {
+  background: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.card .button {
+  width: 50px;
+  height: 15px;
+  background: #333;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 4px black;
+          box-shadow: inset 0px 0px 4px black;
+  cursor: pointer;
+}
+
+.card .sound {
+  height: 5px;
+  width: 40px;
+  background: #333;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+footer {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background: black;
+  font-family: 'Audiowide', cursive;
+}
+
+/* About me projekty--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------- */
+#kontakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .nadpis1,
+  .nadpis2,
+  .nadpis3 {
+    width: 100%;
+    text-align: center;
+  }
+  .nav {
+    display: none;
+  }
+  .header .video {
+    right: auto;
+  }
+  .header h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .header h2 {
+    font-size: 16px;
+  }
+  .header a {
+    font-size: 16px;
+  }
+  .mobile {
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .menu {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .menu span {
+    width: 40px;
+    height: 2px;
+    background: white;
+  }
+  .menu span:nth-child(1), .menu span:nth-child(3) {
+    width: 30px;
+    height: 2px;
+    background: white;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .mobile-menu a {
+    margin: 20px 0px;
+    font-family: 'Audiowide', cursive;
+  }
+  #projekty::before {
+    top: -40%;
+    right: -100%;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
