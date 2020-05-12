@@ -180,7 +180,7 @@ section{
     align-items: center;
     justify-content: center;
     position: relative;
-    min-height: 200vh;
+    min-height: 100vh;
     z-index: 2;
     background: black;
 }
@@ -193,36 +193,28 @@ section{
 .white{
     background: white !important;
 }
-.technologie{
-    left: 0;
-    bottom: 0;
-    background: url("./img/technology-bg.jpeg") bottom;
-    background-size: cover;
-    height: 80vh;
-    width: 100%;
-    position: absolute;
-    box-shadow: inset 0px 0px 20px #000,
-    inset 0px 0px 40px #000;
-}
 .info-data{
     left: 0;
     top: 0;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: black;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .panel{
-    height: 400px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
     width: 50%;
     z-index: 2;
-    background: #333;
+    background: white;
     transition: 1s;
-    opacity: 0;
 }
 .boxes{
     width: 100%;
@@ -232,21 +224,12 @@ section{
     left: 0;
 }
 .box{
- transition: 10s;
+ transition: 1s;
  height: 10px;
  width: 10px;
  position: absolute;
  background: radial-gradient(rgb(39, 39, 39), black);
  border-radius: 50%;
-}
-.technologie::before{
-top: 0;
-left: 0;
-content: "";
-position: absolute;
-height: 100%;
-width: 100%;
-background: rgba(0,0,0,.2);
 }
 
 
@@ -323,6 +306,9 @@ background: rgba(0,0,0,.2);
 }
 .right{
     right: 0;
+}
+.bottom{
+    bottom: 0 !;
 }
 .hide{
     opacity: 0;

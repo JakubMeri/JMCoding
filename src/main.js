@@ -8,7 +8,7 @@ new ScrollMagic.Scene({
 
 new ScrollMagic.Scene({
     triggerElement: "#omne"
-}).setClassToggle(".panel", "show").addTo(controller);
+}).setClassToggle(".panel", "bottom").addTo(controller);
 
 
 new ScrollMagic.Scene({
