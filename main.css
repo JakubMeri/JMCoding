@@ -434,6 +434,7 @@ section {
   -webkit-transition: 1s;
   transition: 1s;
   opacity: 0;
+  text-align: center;
 }
 
 .panel h1 {
@@ -988,6 +989,17 @@ footer {
   }
   footer {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 330px) {
+  .panel::before {
+    right: -16% !important;
+    top: -10% !important;
+  }
+  #kontakt::before {
+    left: -40%;
+    bottom: -20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
