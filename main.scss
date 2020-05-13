@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-$text-color: rgb(252, 235, 0);
+$text-color: rgb(252, 206, 0);
 
 html, body{
     min-height: 100vh;
@@ -131,6 +131,9 @@ section{
     font-family: 'Audiowide', cursive;
     background: transparent;  
     transition: .5s; 
+    opacity: 0;
+    animation: zobraz 1s linear forwards;
+    animation-delay: 2s;
 }
 .color{
     background: black;
@@ -755,6 +758,9 @@ footer{
     align-items: center;
     justify-content: space-between;
     transition: 1s;
+    opacity: 0;
+    animation: zobraz 1s linear forwards;
+    animation-delay: 2s;
 }
 .menu{
     margin-right: 10px;
@@ -795,6 +801,9 @@ footer{
     overflow: hidden;
     opacity: 0;
     transition: .3s;
+    .mob{
+        font-size: 20px;
+    }
     a{
         margin: 20px 0px;
         font-family: 'Audiowide', cursive;

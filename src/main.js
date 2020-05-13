@@ -91,7 +91,7 @@ mobileMenuBtn.addEventListener("click", () => {
         mobileMenu.style.display = "flex";
         mobileMenuBtn.style.transform = "rotateY(180deg)";
         for(let i = 0; i < mobileMenuBtn.children.length; i++){
-            mobileMenuBtn.children[i].style.background = "rgb(252, 235, 0)";
+            mobileMenuBtn.children[i].style.background = "rgb(252, 206, 0)";
         }
         document.body.style.overflowY = "hidden";
         setTimeout(() => {

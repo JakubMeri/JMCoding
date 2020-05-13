@@ -81,13 +81,13 @@ html, body {
 
 .header a:hover {
   padding: 5px 14px;
-  background: #fceb00;
+  background: #fcce00;
   text-shadow: none;
   color: black;
 }
 
 .header span {
-  color: #fceb00;
+  color: #fcce00;
   text-shadow: 1px 1px 1px black;
   -webkit-animation: zobraz 1s linear forwards;
           animation: zobraz 1s linear forwards;
@@ -188,6 +188,11 @@ section {
   background: transparent;
   -webkit-transition: .5s;
   transition: .5s;
+  opacity: 0;
+  -webkit-animation: zobraz 1s linear forwards;
+          animation: zobraz 1s linear forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .color {
@@ -230,7 +235,7 @@ section {
 }
 
 .logo:hover span {
-  color: #fceb00;
+  color: #fcce00;
   text-shadow: 1px 1px 1px #3d3d3d;
 }
 
@@ -244,7 +249,7 @@ section {
 
 .nav-link::before {
   content: "-";
-  color: #fceb00;
+  color: #fcce00;
   position: absolute;
   top: 50%;
   left: -30%;
@@ -258,7 +263,7 @@ section {
 
 .nav-link::after {
   content: "-";
-  color: #fceb00;
+  color: #fcce00;
   position: absolute;
   top: 50%;
   right: -30%;
@@ -395,7 +400,7 @@ section {
   width: 80%;
   left: 0;
   top: 0;
-  background: #fceb00;
+  background: #fcce00;
 }
 
 .HTML::before {
@@ -632,7 +637,7 @@ section {
 }
 
 .nadpis1 {
-  color: #fceb00 !important;
+  color: #fcce00 !important;
 }
 
 .left {
@@ -981,6 +986,11 @@ footer {
             justify-content: space-between;
     -webkit-transition: 1s;
     transition: 1s;
+    opacity: 0;
+    -webkit-animation: zobraz 1s linear forwards;
+            animation: zobraz 1s linear forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
   }
   .menu {
     margin-right: 10px;
@@ -1038,6 +1048,9 @@ footer {
     opacity: 0;
     -webkit-transition: .3s;
     transition: .3s;
+  }
+  .mobile-menu .mob {
+    font-size: 20px;
   }
   .mobile-menu a {
     margin: 20px 0px;
