@@ -9,6 +9,7 @@ $text-color: rgb(252, 235, 0);
 html, body{
     min-height: 100vh;
     scroll-behavior: smooth;
+    background: black;
 }
 ::-webkit-scrollbar{
     display: none;
