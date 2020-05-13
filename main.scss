@@ -297,6 +297,19 @@ section{
     justify-content: center;
     font-family: 'Audiowide', cursive;   
     flex-direction: column;
+    .omne-wrapper{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 1s;
+        opacity: 0;
+    }
     h1{
         margin-bottom: 10px;
     }
@@ -358,9 +371,14 @@ padding: 5px;
     width: auto;
     height: 40%;
     background: black;
-    border: solid 3px black;
+    border: solid 5px black;
     filter: drop-shadow(1px 1px 1px black);
     margin-bottom: 10px;
+    position: relative;
+    transition: .3s;
+}
+.ME:hover{
+    border: solid 0px black;
 }
 
 
@@ -724,10 +742,13 @@ footer{
         font-family: 'Audiowide', cursive;
     }
 }
+.info-data{display: none;}
 .panel{
     width: 100%;
-    h3{
-        margin-top: 50px;
+    .omne-wrapper{
+        h1{
+            margin-top: 50px;
+        }
     }
 }
 #projekty::before{
