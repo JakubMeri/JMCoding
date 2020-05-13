@@ -975,6 +975,9 @@ footer {
   .panel {
     width: 100%;
   }
+  .panel .omne-wrapper {
+    width: 100%;
+  }
   .panel .omne-wrapper h1 {
     margin-top: 50px;
   }

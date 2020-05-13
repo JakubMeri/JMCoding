@@ -8,6 +8,7 @@ new ScrollMagic.Scene({
 
 new ScrollMagic.Scene({
     triggerElement: "#omne",
+    reverse: false
 }).setClassToggle(".omne-wrapper", "show") .addTo(controller); 
 
 new ScrollMagic.Scene({
