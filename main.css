@@ -72,6 +72,11 @@ html, body {
   -webkit-transition: .3s;
   transition: .3s;
   background: rgba(0, 0, 0, 0.2);
+  -webkit-animation: zobraz 1s linear forwards;
+          animation: zobraz 1s linear forwards;
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .header a:hover {
@@ -84,6 +89,8 @@ html, body {
 .header span {
   color: #fceb00;
   text-shadow: 1px 1px 1px black;
+  -webkit-animation: zobraz 1s linear forwards;
+          animation: zobraz 1s linear forwards;
 }
 
 .header h1 {
@@ -94,6 +101,11 @@ html, body {
   pointer-events: none;
   text-transform: uppercase;
   text-align: center;
+  -webkit-animation: zobraz 1s linear forwards;
+          animation: zobraz 1s linear forwards;
+  opacity: 0;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 .header h2 {
@@ -102,6 +114,29 @@ html, body {
   color: white;
   text-shadow: 1px 1px 1px black;
   pointer-events: none;
+  -webkit-animation: zobraz 1s linear forwards;
+          animation: zobraz 1s linear forwards;
+  opacity: 0;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+@-webkit-keyframes zobraz {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zobraz {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .header .video {
