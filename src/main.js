@@ -40,12 +40,12 @@ let show = true;
 let show2 = true;
 button[0].addEventListener("click", () => {
     if(show){
-        document.querySelector(".covid").style.background = 'url("./img/covid.png") top';
-        document.querySelector(".covid").style.backgroundSize = 'cover';
+        document.querySelector(".covid").style.background = 'black';
         show = !show;
     }
     else{
-        document.querySelector(".covid").style.background = 'black';
+        document.querySelector(".covid").style.background = 'url("./img/covid.png") top';
+        document.querySelector(".covid").style.backgroundSize = 'cover';
         show = !show;
     }
 
@@ -53,12 +53,12 @@ button[0].addEventListener("click", () => {
 
 button[1].addEventListener("click", () => {
     if(show2){
-    document.querySelector(".space").style.background = 'url("./img/space-cowboys.png") top';
-    document.querySelector(".space").style.backgroundSize = 'cover';
+    document.querySelector(".space").style.background = 'black';
     show2 = !show2;
 }
 else{
-    document.querySelector(".space").style.background = 'black';
+    document.querySelector(".space").style.background = 'url("./img/space-cowboys.png") top';
+    document.querySelector(".space").style.backgroundSize = 'cover';
     show2 = !show2;
 }
 })
