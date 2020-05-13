@@ -792,6 +792,16 @@ footer{
         }
     }
 }
+.panel::before{
+    content: "";
+    position: absolute;
+    right: -8%;
+    top: -8%;
+    width: 100px;
+    height: 100px;
+    background: black;
+    transform: rotate(45deg);
+}
 #projekty::before{
 background: transparent;
 }
