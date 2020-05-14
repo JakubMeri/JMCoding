@@ -362,6 +362,11 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 
 .skills li {
@@ -879,6 +884,56 @@ footer {
   position: relative;
   overflow: hidden;
   background: white;
+  font-family: 'Audiowide', cursive;
+}
+
+#kontakt .email-container {
+  border: solid 2px black;
+  padding: 5px;
+  font-size: 20px;
+  position: relative;
+  width: auto;
+}
+
+#kontakt .email-container .hlaska {
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: absolute;
+  top: 70px;
+  left: 25%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  text-align: center;
+  width: 50%;
+  background: #333;
+  color: white;
+  border: solid 2px black;
+  opacity: 0;
+  display: none;
+  text-shadow: 1px 1px 1px black;
+}
+
+#kontakt .email {
+  font-family: 'Audiowide', cursive;
+  border: none;
+  outline: none;
+  cursor: default;
+  font-size: 20px;
+}
+
+#kontakt .copy {
+  font-family: 'Audiowide', cursive;
+  color: black;
+  font-size: 18px;
+  border: 2px solid black;
+  background: transparent;
+  cursor: pointer;
+  padding: 1px 4px;
+}
+
+#kontakt .copy:hover {
+  background: #333;
+  color: white;
 }
 
 #kontakt::before {
@@ -899,6 +954,31 @@ footer {
 
 .mobile-menu {
   display: none;
+}
+
+@media (max-width: 1025px) {
+  .ME {
+    height: 30%;
+  }
+  #projekty::before {
+    width: 200px;
+    height: 200px;
+    right: -10%;
+    top: -10%;
+  }
+  .info-data::before {
+    left: -15% !important;
+    bottom: -5%;
+  }
+  .panel::before {
+    height: 200px;
+    width: 200px;
+    right: -30%;
+    top: -10%;
+  }
+  #kontakt::before {
+    left: -10%;
+  }
 }
 
 @media (max-width: 770px) {
@@ -1087,6 +1167,15 @@ footer {
   }
   #kontakt::before {
     left: -30%;
+  }
+  .hlaska {
+    position: absolute;
+    top: 120px !important;
+    left: 25%;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    text-align: center;
+    width: 50%;
   }
   footer {
     font-size: 12px;

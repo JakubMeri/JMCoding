@@ -22,11 +22,18 @@ new ScrollMagic.Scene({
 }).setClassToggle(".nadpis3", "show") .addTo(controller);  
 
 new ScrollMagic.Scene({
+    triggerElement: "#omne",
+    reverse: false
+}).setClassToggle(".skills", "show") .addTo(controller);  
+
+new ScrollMagic.Scene({
     triggerElement: "#projekty",
+    reverse: false
 }).setClassToggle(".one", "show") .addTo(controller); 
 
 new ScrollMagic.Scene({
     triggerElement: "#projekty",
+    reverse: false
 }).setClassToggle(".two", "show") .addTo(controller);
 
 new ScrollMagic.Scene({
@@ -77,6 +84,10 @@ const navItem = document.querySelectorAll(".nav-link")
 navItem.forEach( item => {
     item.addEventListener("click", () =>{
         mobileMenu.style.opacity = "0";
+        mobileMenuBtn.style.transform = "rotateY(0deg)";
+        for(let i = 0; i < mobileMenuBtn.children.length; i++){
+            mobileMenuBtn.children[i].style.background = "#fff";
+        }
         setTimeout(() => {
             mobileMenu.style.display = "none";
             document.body.style.overflowY = "auto";
@@ -115,6 +126,26 @@ mobileMenuBtn.addEventListener("click", () => {
 
 })
 
+const copyEmail = () => {
+    document.querySelector(".copy").addEventListener("click", () =>{
+        let email = document.querySelector(".email");
+        email.select();
+        email.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        let hlaska = document.querySelector(".hlaska");
+        hlaska.style.display = "block";
+        setTimeout(() => {
+            hlaska.style.opacity = "1"; 
+        }, 0);
+        setTimeout(() => {
+            hlaska.style.opacity = "0";
+            setTimeout(() => {
+                hlaska.style.display = "none"; 
+            }, 2500);
+        }, 2000);
+    })
+}
+copyEmail();
 
 
 
