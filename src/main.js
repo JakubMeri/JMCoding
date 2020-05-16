@@ -37,6 +37,11 @@ new ScrollMagic.Scene({
 }).setClassToggle(".two", "show") .addTo(controller);
 
 new ScrollMagic.Scene({
+    triggerElement: "#projekty",
+    reverse: false
+}).setClassToggle(".three", "show") .addTo(controller);
+
+new ScrollMagic.Scene({
     triggerElement: ".wrapper",
 }).setClassToggle(".nav", "color") .addTo(controller);
 
@@ -50,6 +55,8 @@ new ScrollMagic.Scene({
 const button = document.querySelectorAll(".button");
 let show = true;
 let show2 = true;
+let show3 = true;
+
 button[0].addEventListener("click", () => {
     if(show){
         document.querySelector(".covid").style.background = 'black';
@@ -72,6 +79,18 @@ else{
     document.querySelector(".space").style.background = 'url("./img/space-cowboys.png") top';
     document.querySelector(".space").style.backgroundSize = 'cover';
     show2 = !show2;
+}
+})
+
+button[2].addEventListener("click", () => {
+    if(show3){
+    document.querySelector(".elearning").style.background = 'black';
+    show3 = !show3;
+}
+else{
+    document.querySelector(".elearning").style.background = 'url("./img/home.png") top';
+    document.querySelector(".elearning").style.backgroundSize = 'cover';
+    show3 = !show3;
 }
 })
 

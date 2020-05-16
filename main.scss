@@ -583,7 +583,7 @@ padding: 5px;
         box-shadow: inset 0px 0px 1px rgb(143, 143, 143);
     }
 
-    .covid, .space{
+    .covid, .space, .elearning{
         transition: .5s;
     }
     .covid{
@@ -592,6 +592,10 @@ padding: 5px;
     }
     .space{
         background: url("./img/space-cowboys.png") center;
+        background-size: cover;
+    }
+    .elearning{
+        background: url("./img/home.png") center;
         background-size: cover;
     }
     .button{
