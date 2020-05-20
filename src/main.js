@@ -42,6 +42,11 @@ new ScrollMagic.Scene({
 }).setClassToggle(".three", "show") .addTo(controller);
 
 new ScrollMagic.Scene({
+    triggerElement: "#projekty",
+    reverse: false
+}).setClassToggle(".four", "show") .addTo(controller);
+
+new ScrollMagic.Scene({
     triggerElement: ".wrapper",
 }).setClassToggle(".nav", "color") .addTo(controller);
 
@@ -90,6 +95,18 @@ button[2].addEventListener("click", () => {
 else{
     document.querySelector(".elearning").style.background = 'url("./img/home.png") top';
     document.querySelector(".elearning").style.backgroundSize = 'cover';
+    show3 = !show3;
+}
+})
+
+button[3].addEventListener("click", () => {
+    if(show3){
+    document.querySelector(".cyber").style.background = 'black';
+    show3 = !show3;
+}
+else{
+    document.querySelector(".cyber").style.background = 'url("./img/cyber.png") center';
+    document.querySelector(".cyber").style.backgroundSize = 'cover';
     show3 = !show3;
 }
 })

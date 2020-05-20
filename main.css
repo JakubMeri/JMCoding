@@ -769,6 +769,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   background: black;
+  border: solid 3px white;
 }
 
 .card .screen {
@@ -795,7 +796,7 @@ section {
           box-shadow: inset 0px 0px 1px #8f8f8f;
 }
 
-.card .covid, .card .space, .card .elearning {
+.card .covid, .card .space, .card .elearning, .card .cyber {
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -812,6 +813,11 @@ section {
 
 .card .elearning {
   background: url("./img/home.png") center;
+  background-size: cover;
+}
+
+.card .cyber {
+  background: url("./img/cyber.png") center;
   background-size: cover;
 }
 
