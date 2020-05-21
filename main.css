@@ -796,7 +796,7 @@ section {
           box-shadow: inset 0px 0px 1px #8f8f8f;
 }
 
-.card .covid, .card .space, .card .elearning, .card .cyber {
+.card .covid, .card .space, .card .elearning, .card .cyber, .card .mpower {
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -818,6 +818,11 @@ section {
 
 .card .cyber {
   background: url("./img/cyber.png") center;
+  background-size: cover;
+}
+
+.card .mpower {
+  background: url("./img/MPOWER.png") center;
   background-size: cover;
 }
 

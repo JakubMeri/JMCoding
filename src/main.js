@@ -47,6 +47,11 @@ new ScrollMagic.Scene({
 }).setClassToggle(".four", "show") .addTo(controller);
 
 new ScrollMagic.Scene({
+    triggerElement: "#projekty",
+    reverse: false
+}).setClassToggle(".five", "show") .addTo(controller);
+
+new ScrollMagic.Scene({
     triggerElement: ".wrapper",
 }).setClassToggle(".nav", "color") .addTo(controller);
 
@@ -110,6 +115,19 @@ else{
     show3 = !show3;
 }
 })
+
+button[4].addEventListener("click", () => {
+    if(show3){
+    document.querySelector(".mpower").style.background = 'black';
+    show3 = !show3;
+}
+else{
+    document.querySelector(".mpower").style.background = 'url("./img/MPOWER.png") center';
+    document.querySelector(".mpower").style.backgroundSize = 'cover';
+    show3 = !show3;
+}
+})
+
 
 
 
