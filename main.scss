@@ -657,6 +657,10 @@ footer{
     color: white;
     background: black;
     font-family: 'Audiowide', cursive;
+    span{
+        color: $text-color;
+        margin-right: 3px;
+    }
 }
 
 
