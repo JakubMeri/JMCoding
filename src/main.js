@@ -52,6 +52,11 @@ new ScrollMagic.Scene({
 }).setClassToggle(".five", "show") .addTo(controller);
 
 new ScrollMagic.Scene({
+    triggerElement: "#projekty",
+    reverse: false
+}).setClassToggle(".six", "show") .addTo(controller);
+
+new ScrollMagic.Scene({
     triggerElement: ".wrapper",
 }).setClassToggle(".nav", "color") .addTo(controller);
 
@@ -124,6 +129,18 @@ button[4].addEventListener("click", () => {
 else{
     document.querySelector(".mpower").style.background = 'url("./img/MPOWER.png") center';
     document.querySelector(".mpower").style.backgroundSize = 'cover';
+    show3 = !show3;
+}
+})
+
+button[5].addEventListener("click", () => {
+    if(show3){
+    document.querySelector(".odmamicky").style.background = 'black';
+    show3 = !show3;
+}
+else{
+    document.querySelector(".odmamicky").style.background = 'url("./img/ODMAMICKY.png") center';
+    document.querySelector(".odmamicky").style.backgroundSize = 'cover';
     show3 = !show3;
 }
 })

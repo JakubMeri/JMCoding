@@ -581,12 +581,11 @@ section {
   -webkit-transition: .5s;
   transition: .5s;
   background: white;
-  min-height: 100vh;
+  min-height: 180vh;
 }
 
 .card-container {
-  height: 80%;
-  margin-top: 0px;
+  height: auto;
   width: 100vw;
   display: -ms-grid;
   display: grid;
@@ -600,6 +599,7 @@ section {
           justify-content: center;
   grid-gap: 100px;
   position: relative;
+  top: 0px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -608,7 +608,7 @@ section {
   position: absolute;
   content: "";
   right: -60%;
-  top: 0%;
+  top: -20%;
   height: 50%;
   width: 100%;
   background: black;
@@ -796,7 +796,7 @@ section {
           box-shadow: inset 0px 0px 1px #8f8f8f;
 }
 
-.card .covid, .card .space, .card .elearning, .card .cyber, .card .mpower {
+.card .covid, .card .space, .card .elearning, .card .cyber, .card .mpower, .card .odmamicky {
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -823,6 +823,11 @@ section {
 
 .card .mpower {
   background: url("./img/MPOWER.png") center;
+  background-size: cover;
+}
+
+.card .odmamicky {
+  background: url("./img/ODMAMICKY.png") center;
   background-size: cover;
 }
 
@@ -1062,6 +1067,7 @@ footer {
     font-size: 16px;
   }
   .card-container {
+    top: 0px;
     margin-top: 200px;
   }
   .mobile {

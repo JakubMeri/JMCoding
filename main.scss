@@ -435,11 +435,10 @@ padding: 5px;
     position: relative;
     transition: .5s;
     background: white;
-    min-height: 100vh;
+    min-height: 180vh;
 }
 .card-container{
-    height: 80%;
-    margin-top: 0px;
+    height: auto;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px);
@@ -447,13 +446,14 @@ padding: 5px;
     justify-content: center;
     grid-gap: 100px;
     position: relative;
+    top: 0px;
     transition: .5s;
 }
 #projekty::before{
     position: absolute;
     content: "";
     right: -60%;
-    top: 0%;
+    top: -20%;
     height: 50%;
     width: 100%;
     background: black;
@@ -584,7 +584,7 @@ padding: 5px;
         box-shadow: inset 0px 0px 1px rgb(143, 143, 143);
     }
 
-    .covid, .space, .elearning, .cyber, .mpower{
+    .covid, .space, .elearning, .cyber, .mpower, .odmamicky{
         transition: .5s;
     }
     .covid{
@@ -594,17 +594,21 @@ padding: 5px;
     .space{
         background: url("./img/space-cowboys.png") center;
         background-size: cover;
-    }
+            }
     .elearning{
         background: url("./img/home.png") center;
         background-size: cover;
-    }
+           }
     .cyber{
         background: url("./img/cyber.png") center;
         background-size: cover;
-    }
+            }
     .mpower{
         background: url("./img/MPOWER.png") center;
+        background-size: cover;
+           }
+    .odmamicky{
+        background: url("./img/ODMAMICKY.png") center;
         background-size: cover;
     }
     .button{
@@ -831,6 +835,7 @@ footer{
     }
 }
 .card-container{
+    top: 0px;
     margin-top: 200px;
 }
 .mobile{
