@@ -353,6 +353,7 @@ section{
     margin: 10px 10px;
     position: relative;
     text-shadow: 1px 1px 1px black;
+    z-index: 2;
 }
 .personal-links:before{
     content: "";
