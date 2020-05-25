@@ -773,9 +773,14 @@ footer{
     }
 }
 @media (max-width: 500px){
-.svg-panel, .svg-projects{
-    display: none;
+#omne{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
+/* .svg-panel, .svg-projects{
+    display: none;
+} */
 .nadpis1,
 .nadpis2,
 .nadpis3{
@@ -880,9 +885,18 @@ footer{
     height: 20%;
     transition: .4s;
 }
-.info-data{display: none;}
-.panel{
+.info-data{
+    display: flex;
+    position: relative !important;
+    grid-row: 2;
     width: 100%;
+    height: 100vh;
+}
+.panel{
+    position: relative;
+    grid-row: 1;
+    width: 100%;
+    height: 100vh;
     .omne-wrapper{
         width: 100%;
         h1{

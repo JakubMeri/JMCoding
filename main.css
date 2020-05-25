@@ -1007,9 +1007,17 @@ footer span {
 }
 
 @media (max-width: 500px) {
-  .svg-panel, .svg-projects {
-    display: none;
+  #omne {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
+  /* .svg-panel, .svg-projects{
+    display: none;
+} */
   .nadpis1,
   .nadpis2,
   .nadpis3 {
@@ -1140,10 +1148,21 @@ footer span {
     transition: .4s;
   }
   .info-data {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative !important;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 100vh;
   }
   .panel {
+    position: relative;
+    -ms-grid-row: 1;
+    grid-row: 1;
     width: 100%;
+    height: 100vh;
   }
   .panel .omne-wrapper {
     width: 100%;
