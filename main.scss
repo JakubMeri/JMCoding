@@ -388,18 +388,33 @@ padding: 5px;
 }
 
 .ME{
-    width: auto;
+    width: 50%;
     height: 40%;
-    background: black;
-    border: solid 5px black;
-    filter: drop-shadow(1px 1px 1px black);
     margin-bottom: 10px;
     position: relative;
-    transition: .3s;
+    text-align: initial;
+    overflow: hidden;
+    background: black;
+    background: url("./img/JM.png") center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    line-height: 5px;
+    font-weight: bold;
+    font-size: 8px;
+    filter: grayscale(50%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 89% 100%, 4% 100%, 0% 70%, 0% 30%);
+    p{
+        color: transparent;
+        pointer-events: none;
+    }
 }
 .ME:hover{
-    border: solid 0px black;
+background-clip: border-box;
+-webkit-background-clip: border-box;
 }
+
+
 
 
 
