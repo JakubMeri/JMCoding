@@ -337,18 +337,6 @@ section {
   color: white;
 }
 
-.info-data::before {
-  content: "";
-  position: absolute;
-  left: -8%;
-  bottom: -8%;
-  width: 100px;
-  height: 100px;
-  background: white;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
 .skills {
   width: 400px;
   height: 400px;
@@ -492,16 +480,20 @@ section {
   margin-bottom: 5px;
 }
 
-.panel::before {
-  content: "";
+.svg-panel {
   position: absolute;
-  right: -8%;
-  top: -8%;
-  width: 100px;
-  height: 100px;
-  background: black;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.svg-panel-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .personal-links {
@@ -582,6 +574,7 @@ section {
   transition: .5s;
   background: white;
   min-height: 180vh;
+  width: 100%;
 }
 
 .card-container {
@@ -604,16 +597,13 @@ section {
   transition: .5s;
 }
 
-#projekty::before {
+.svg-projects {
   position: absolute;
-  content: "";
-  right: -60%;
-  top: -20%;
-  height: 50%;
-  width: 100%;
-  background: black;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  left: 0%;
+  top: 0%;
+  width: 100vw;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 .nadpis1, .nadpis2, .nadpis3 {
@@ -642,6 +632,10 @@ section {
 }
 
 .nadpis1 {
+  color: #fcce00 !important;
+}
+
+.nadpis2 {
   color: #fcce00 !important;
 }
 
@@ -962,16 +956,11 @@ footer span {
   color: white;
 }
 
-#kontakt::before {
-  content: "";
+.svg-contact {
   position: absolute;
-  left: -8%;
-  bottom: -15%;
-  width: 200px;
-  height: 200px;
-  background: black;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .mobile {
@@ -986,24 +975,8 @@ footer span {
   .ME {
     height: 30%;
   }
-  #projekty::before {
-    width: 200px;
-    height: 200px;
-    right: -10%;
-    top: -10%;
-  }
-  .info-data::before {
-    left: -15% !important;
-    bottom: -5%;
-  }
-  .panel::before {
-    height: 200px;
-    width: 200px;
-    right: -30%;
-    top: -10%;
-  }
-  #kontakt::before {
-    left: -10%;
+  .nadpis2 {
+    color: black !important;
   }
 }
 
@@ -1014,21 +987,9 @@ footer span {
   #projekty {
     overflow: hidden !important;
   }
-  #projekty::before {
-    width: 200px;
-    height: 200px;
-    right: -20%;
-    top: -10%;
-  }
   .info-data::before {
     left: -15% !important;
     bottom: -5%;
-  }
-  .panel::before {
-    height: 200px;
-    width: 200px;
-    right: -30%;
-    top: -10%;
   }
   .skills {
     width: 300px;
@@ -1045,6 +1006,9 @@ footer span {
 }
 
 @media (max-width: 500px) {
+  .svg-panel, .svg-projects {
+    display: none;
+  }
   .nadpis1,
   .nadpis2,
   .nadpis3 {
@@ -1052,6 +1016,7 @@ footer span {
     text-align: center;
   }
   .nadpis1 {
+    top: 60px;
     color: black !important;
   }
   .nav {
@@ -1162,6 +1127,16 @@ footer span {
   .mobile-menu a {
     margin: 20px 0px;
     font-family: 'Audiowide', cursive;
+    z-index: 5;
+  }
+  .svg-mobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    fill: #fcce00;
+    height: 20%;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
   .info-data {
     display: none;
@@ -1175,26 +1150,6 @@ footer span {
   .panel .omne-wrapper h1 {
     margin-top: 50px;
   }
-  .panel::before {
-    content: "";
-    position: absolute;
-    right: -8%;
-    top: -8%;
-    width: 100px;
-    height: 100px;
-    background: black;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  #projekty::before {
-    background: transparent;
-  }
-  .panel::before {
-    right: -15% !important;
-  }
-  #kontakt::before {
-    left: -30%;
-  }
   .hlaska {
     position: absolute;
     top: 120px !important;
@@ -1206,17 +1161,6 @@ footer span {
   }
   footer {
     font-size: 12px;
-  }
-}
-
-@media (max-width: 330px) {
-  .panel::before {
-    right: -16% !important;
-    top: -10% !important;
-  }
-  #kontakt::before {
-    left: -40%;
-    bottom: -20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
