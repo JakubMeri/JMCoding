@@ -1,149 +1,65 @@
 var controller = new ScrollMagic.Controller();
 
 // create a scene
-new ScrollMagic.Scene({
-    triggerElement: "#omne",
-    reverse: false
-}).setClassToggle(".nadpis1", "show").addTo(controller);
 
-new ScrollMagic.Scene({
-    triggerElement: "#omne",
-    reverse: false
-}).setClassToggle(".omne-wrapper", "show") .addTo(controller); 
+const scrollMagicControler = (when, what, toggle ="show", reverse=false) => {
+    new ScrollMagic.Scene({
+        triggerElement: when,
+        reverse: reverse
+    }).setClassToggle(what, toggle).addTo(controller);
+}
 
-new ScrollMagic.Scene({
-    triggerElement: "#projekty",
-    reverse: false
-}).setClassToggle(".nadpis2", "show") .addTo(controller);
+scrollMagicControler("#omne", ".nadpis1");
+scrollMagicControler("#projekty", ".nadpis2");
+scrollMagicControler("#kontakt", ".nadpis3");
+scrollMagicControler("#omne", ".skills");
+scrollMagicControler("#omne", ".omne-wrapper");
+scrollMagicControler("#projekty", ".one");
+scrollMagicControler("#projekty", ".two");
+scrollMagicControler("#projekty", ".three");
+scrollMagicControler("#projekty", ".four");
+scrollMagicControler("#projekty", ".five");
+scrollMagicControler("#projekty", ".six");
+scrollMagicControler("#projekty", ".seven");
+scrollMagicControler("#projekty", ".five");
+scrollMagicControler(".wrapper", ".nav", "color", true);
+scrollMagicControler(".wrapper", ".mobile", "color", true);
 
-new ScrollMagic.Scene({
-    triggerElement: "#kontakt",
-    reverse: false
-}).setClassToggle(".nadpis3", "show") .addTo(controller);  
-
-new ScrollMagic.Scene({
-    triggerElement: "#omne",
-    reverse: false
-}).setClassToggle(".skills", "show") .addTo(controller);  
-
-new ScrollMagic.Scene({
-    triggerElement: "#projekty",
-    reverse: false
-}).setClassToggle(".one", "show") .addTo(controller); 
-
-new ScrollMagic.Scene({
-    triggerElement: "#projekty",
-    reverse: false
-}).setClassToggle(".two", "show") .addTo(controller);
-
-new ScrollMagic.Scene({
-    triggerElement: "#projekty",
-    reverse: false
-}).setClassToggle(".three", "show") .addTo(controller);
-
-new ScrollMagic.Scene({
-    triggerElement: "#projekty",
-    reverse: false
-}).setClassToggle(".four", "show") .addTo(controller);
-
-new ScrollMagic.Scene({
-    triggerElement: "#projekty",
-    reverse: false
-}).setClassToggle(".five", "show") .addTo(controller);
-
-new ScrollMagic.Scene({
-    triggerElement: "#projekty",
-    reverse: false
-}).setClassToggle(".six", "show") .addTo(controller);
-
-new ScrollMagic.Scene({
-    triggerElement: ".wrapper",
-}).setClassToggle(".nav", "color") .addTo(controller);
-
-new ScrollMagic.Scene({
-    triggerElement: ".wrapper",
-}).setClassToggle(".mobile", "color") .addTo(controller); 
 
 
 //------START MOBILE
 
 const button = document.querySelectorAll(".button");
-let show = true;
-let show2 = true;
-let show3 = true;
+let show, show2, show3, show4, show5, show6, show7;
+show = true;
+show2 = true;
+show3 = true;
+show4 = true;
+show5 = true;
+show6 = true;
+show7 = true;
 
-button[0].addEventListener("click", () => {
-    if(show){
-        document.querySelector(".covid").style.background = 'black';
-        show = !show;
-    }
-    else{
-        document.querySelector(".covid").style.background = 'url("./img/covid.png") top';
-        document.querySelector(".covid").style.backgroundSize = 'cover';
-        show = !show;
-    }
+const showMobileBG = (btn, project, show) => {
+    btn.addEventListener("click", () => {
+        if(show){
+            document.querySelector(`.${project}`).style.background = 'black';
+            show = !show;
+        }
+        else{
+            document.querySelector(`.${project}`).style.background = `url("./img/${project}.png") top`;
+            document.querySelector(`.${project}`).style.backgroundSize = 'cover';
+            show = !show;
+        }
+    });
+}
 
-})
-
-button[1].addEventListener("click", () => {
-    if(show2){
-    document.querySelector(".space").style.background = 'black';
-    show2 = !show2;
-}
-else{
-    document.querySelector(".space").style.background = 'url("./img/space-cowboys.png") top';
-    document.querySelector(".space").style.backgroundSize = 'cover';
-    show2 = !show2;
-}
-})
-
-button[2].addEventListener("click", () => {
-    if(show3){
-    document.querySelector(".elearning").style.background = 'black';
-    show3 = !show3;
-}
-else{
-    document.querySelector(".elearning").style.background = 'url("./img/home.png") top';
-    document.querySelector(".elearning").style.backgroundSize = 'cover';
-    show3 = !show3;
-}
-})
-
-button[3].addEventListener("click", () => {
-    if(show3){
-    document.querySelector(".cyber").style.background = 'black';
-    show3 = !show3;
-}
-else{
-    document.querySelector(".cyber").style.background = 'url("./img/cyber.png") center';
-    document.querySelector(".cyber").style.backgroundSize = 'cover';
-    show3 = !show3;
-}
-})
-
-button[4].addEventListener("click", () => {
-    if(show3){
-    document.querySelector(".mpower").style.background = 'black';
-    show3 = !show3;
-}
-else{
-    document.querySelector(".mpower").style.background = 'url("./img/MPOWER.png") center';
-    document.querySelector(".mpower").style.backgroundSize = 'cover';
-    show3 = !show3;
-}
-})
-
-button[5].addEventListener("click", () => {
-    if(show3){
-    document.querySelector(".odmamicky").style.background = 'black';
-    show3 = !show3;
-}
-else{
-    document.querySelector(".odmamicky").style.background = 'url("./img/ODMAMICKY.png") center';
-    document.querySelector(".odmamicky").style.backgroundSize = 'cover';
-    show3 = !show3;
-}
-})
+showMobileBG(button[0], "covid", show );
+showMobileBG(button[1], "space", show2 );
+showMobileBG(button[2], "elearning", show3 );
+showMobileBG(button[3], "cyber", show4 );
+showMobileBG(button[4], "mpower", show5 );
+showMobileBG(button[5], "odmamicky", show6 );
+showMobileBG(button[6], "msports", show7 );
 
 
 

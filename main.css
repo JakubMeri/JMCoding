@@ -806,7 +806,7 @@ section {
           box-shadow: inset 0px 0px 1px #8f8f8f;
 }
 
-.card .covid, .card .space, .card .elearning, .card .cyber, .card .mpower, .card .odmamicky {
+.card .covid, .card .space, .card .elearning, .card .cyber, .card .mpower, .card .odmamicky, .card .msports {
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -817,12 +817,12 @@ section {
 }
 
 .card .space {
-  background: url("./img/space-cowboys.png") center;
+  background: url("./img/space.png") center;
   background-size: cover;
 }
 
 .card .elearning {
-  background: url("./img/home.png") center;
+  background: url("./img/elearning.png") center;
   background-size: cover;
 }
 
@@ -832,12 +832,17 @@ section {
 }
 
 .card .mpower {
-  background: url("./img/MPOWER.png") center;
+  background: url("./img/mpower.png") center;
   background-size: cover;
 }
 
 .card .odmamicky {
-  background: url("./img/ODMAMICKY.png") center;
+  background: url("./img/odmamicky.png") center;
+  background-size: cover;
+}
+
+.card .msports {
+  background: url("./img/msports.png") center;
   background-size: cover;
 }
 

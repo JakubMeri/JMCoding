@@ -594,7 +594,7 @@ background-clip: border-box;
         box-shadow: inset 0px 0px 1px rgb(143, 143, 143);
     }
 
-    .covid, .space, .elearning, .cyber, .mpower, .odmamicky{
+    .covid, .space, .elearning, .cyber, .mpower, .odmamicky, .msports{
         transition: .5s;
     }
     .covid{
@@ -602,11 +602,11 @@ background-clip: border-box;
         background-size: cover;
     }
     .space{
-        background: url("./img/space-cowboys.png") center;
+        background: url("./img/space.png") center;
         background-size: cover;
             }
     .elearning{
-        background: url("./img/home.png") center;
+        background: url("./img/elearning.png") center;
         background-size: cover;
            }
     .cyber{
@@ -614,11 +614,15 @@ background-clip: border-box;
         background-size: cover;
             }
     .mpower{
-        background: url("./img/MPOWER.png") center;
+        background: url("./img/mpower.png") center;
         background-size: cover;
            }
     .odmamicky{
-        background: url("./img/ODMAMICKY.png") center;
+        background: url("./img/odmamicky.png") center;
+        background-size: cover;
+    }
+    .msports{
+        background: url("./img/msports.png") center;
         background-size: cover;
     }
     .button{
