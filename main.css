@@ -11,6 +11,7 @@ html, body {
   min-height: 100vh;
   scroll-behavior: smooth;
   background: black;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -541,8 +542,8 @@ section {
 }
 
 .ME {
-  width: 50%;
-  height: 40%;
+  width: 45%;
+  height: 50%;
   margin-bottom: 10px;
   position: relative;
   text-align: initial;
@@ -1005,7 +1006,8 @@ footer span {
 
 @media (max-width: 770px) {
   .ME {
-    height: 30%;
+    height: 40%;
+    width: 70%;
   }
   #projekty {
     overflow: hidden !important;
