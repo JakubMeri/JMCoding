@@ -558,8 +558,10 @@ section {
   font-size: 8px;
   -webkit-filter: grayscale(50%);
           filter: grayscale(50%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 89% 100%, 4% 100%, 0% 70%, 0% 30%);
-          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 89% 100%, 4% 100%, 0% 70%, 0% 30%);
+  -webkit-box-shadow: inset 0px 0px 10px #929292;
+          box-shadow: inset 0px 0px 10px #929292;
+  border: solid 1px silver;
+  border-radius: 1px;
 }
 
 .ME p {
