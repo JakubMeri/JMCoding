@@ -558,8 +558,8 @@ section {
   font-size: 8px;
   -webkit-filter: grayscale(50%);
           filter: grayscale(50%);
-  -webkit-box-shadow: inset 0px 0px 10px #929292;
-          box-shadow: inset 0px 0px 10px #929292;
+  -webkit-box-shadow: inset 0px 0px 5px #e0e0e0, 0px 0px 5px #d6d6d6;
+          box-shadow: inset 0px 0px 5px #e0e0e0, 0px 0px 5px #d6d6d6;
   border: solid 1px silver;
   border-radius: 1px;
 }
