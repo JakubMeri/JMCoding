@@ -7,7 +7,8 @@
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
   scroll-behavior: smooth;
   background: black;
@@ -36,7 +37,7 @@ html, body {
 }
 
 .header {
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   background: black;
   height: 100vh;
   width: 100vw;
@@ -70,8 +71,8 @@ html, body {
   text-shadow: 1px 1px 1px black;
   -webkit-box-shadow: 1px 1px 1px black;
           box-shadow: 1px 1px 1px black;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: rgba(0, 0, 0, 0.2);
   -webkit-animation: zobraz 1s linear forwards;
           animation: zobraz 1s linear forwards;
@@ -105,8 +106,8 @@ html, body {
   -webkit-animation: zobraz 1s linear forwards;
           animation: zobraz 1s linear forwards;
   opacity: 0;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .header h2 {
@@ -118,8 +119,8 @@ html, body {
   -webkit-animation: zobraz 1s linear forwards;
           animation: zobraz 1s linear forwards;
   opacity: 0;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 @-webkit-keyframes zobraz {
@@ -185,10 +186,10 @@ section {
       justify-content: space-around;
   z-index: 10;
   width: 100%;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   background: transparent;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   opacity: 0;
   -webkit-animation: zobraz 1s linear forwards;
           animation: zobraz 1s linear forwards;
@@ -221,8 +222,8 @@ section {
           justify-content: center;
   font-size: 20px;
   font-weight: bold;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -231,8 +232,8 @@ section {
 
 .logo span {
   font-size: 12px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .logo:hover span {
@@ -256,8 +257,8 @@ section {
   left: -30%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  -webkit-transition: left .3s, opacity .3s;
-  transition: left .3s, opacity .3s;
+  -webkit-transition: left 0.3s, opacity 0.3s;
+  transition: left 0.3s, opacity 0.3s;
   opacity: 0;
   text-shadow: 1px 1px 1px black;
 }
@@ -270,8 +271,8 @@ section {
   right: -30%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  -webkit-transition: right .3s, opacity .3s;
-  transition: right .3s, opacity .3s;
+  -webkit-transition: right 0.3s, opacity 0.3s;
+  transition: right 0.3s, opacity 0.3s;
   opacity: 0;
   text-shadow: 1px 1px 1px black;
 }
@@ -354,8 +355,8 @@ section {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 .skills li {
@@ -371,10 +372,15 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 }
 
-.HTML, .CSS, .JavaScript, .React, .PHP, .SQL {
+.HTML,
+.CSS,
+.JavaScript,
+.React,
+.PHP,
+.SQL {
   height: 8px;
   width: 200px;
   position: absolute;
@@ -441,7 +447,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -589,8 +595,8 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background: white;
   min-height: 180vh;
   width: 100%;
@@ -612,8 +618,8 @@ section {
   grid-gap: 100px;
   position: relative;
   top: 0px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .svg-projects {
@@ -625,7 +631,9 @@ section {
           transform: rotateX(180deg);
 }
 
-.nadpis1, .nadpis2, .nadpis3 {
+.nadpis1,
+.nadpis2,
+.nadpis3 {
   position: absolute;
   top: 50px;
   width: 400px;
@@ -641,12 +649,12 @@ section {
           justify-content: center;
   background: transparent;
   color: black;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   font-size: 30px;
   text-shadow: 1px 1px 1px black;
   opacity: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 3;
 }
 
@@ -690,8 +698,8 @@ section {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  -webkit-transition: .6s;
-  transition: .6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .card-wrapper .info {
@@ -712,20 +720,22 @@ section {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: white;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   text-shadow: 1px 1px 1px black;
   border: 2px solid black;
 }
 
-.card-wrapper .info span .kod, .card-wrapper .info span .demo {
+.card-wrapper .info span .kod,
+.card-wrapper .info span .demo {
   color: white;
   font-size: 20px;
   margin: 0px 5px;
   position: relative;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 }
 
-.card-wrapper .info span .kod:hover, .card-wrapper .info span .demo:hover {
+.card-wrapper .info span .kod:hover,
+.card-wrapper .info span .demo:hover {
   color: black;
 }
 
@@ -809,9 +819,21 @@ section {
           box-shadow: inset 0px 0px 1px #8f8f8f;
 }
 
-.card .covid, .card .space, .card .elearning, .card .cyber, .card .mpower, .card .odmamicky, .card .msports {
-  -webkit-transition: .5s;
-  transition: .5s;
+.card .covid,
+.card .kosmonauti,
+.card .space,
+.card .elearning,
+.card .cyber,
+.card .mpower,
+.card .odmamicky,
+.card .msports {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card .kosmonauti {
+  background: url("./img/kosmonauti.png") center;
+  background-size: cover;
 }
 
 .card .covid {
@@ -871,7 +893,7 @@ section {
           transform: translate(-50%, -50%);
   background: white;
   color: black;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   text-align: center;
   font-weight: bold;
 }
@@ -904,7 +926,7 @@ footer {
           justify-content: center;
   color: white;
   background: black;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 }
 
 footer span {
@@ -928,7 +950,7 @@ footer span {
   position: relative;
   overflow: hidden;
   background: white;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 }
 
 #kontakt .email-container {
@@ -940,8 +962,8 @@ footer span {
 }
 
 #kontakt .email-container .hlaska {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   position: absolute;
   top: 70px;
   left: 25%;
@@ -958,7 +980,7 @@ footer span {
 }
 
 #kontakt .email {
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   border: none;
   outline: none;
   cursor: default;
@@ -966,7 +988,7 @@ footer span {
 }
 
 #kontakt .copy {
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   color: black;
   font-size: 18px;
   border: 2px solid black;
@@ -1117,15 +1139,16 @@ footer span {
     border: none;
     cursor: pointer;
     outline: none;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .menu span {
     width: 40px;
     height: 2px;
     background: white;
   }
-  .menu span:nth-child(1), .menu span:nth-child(3) {
+  .menu span:nth-child(1),
+  .menu span:nth-child(3) {
     width: 30px;
     height: 2px;
     background: white;
@@ -1151,15 +1174,15 @@ footer span {
             flex-direction: column;
     overflow: hidden;
     opacity: 0;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .mobile-menu .mob {
     font-size: 20px;
   }
   .mobile-menu a {
     margin: 20px 0px;
-    font-family: 'Audiowide', cursive;
+    font-family: "Audiowide", cursive;
     z-index: 5;
   }
   .svg-mobile {
@@ -1168,8 +1191,8 @@ footer span {
     left: 0;
     fill: #fcce00;
     height: 20%;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
   }
   .info-data {
     display: -webkit-box;
